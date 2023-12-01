@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="app.css"/>
+    <link rel="stylesheet" href="mobile.css"/>
+    <link rel="stylesheet" href="tablet.css"/>
+    <script src="https://kit.fontawesome.com/29c6c5af09.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <aside>
+      <a href="https://wa.me/628123456789">
+        <img src="./asset/Whatsapp.png">
+      </a>  
+    </aside>
+    <header class="header-content" id="home">
+      <div class="navbar-container">
+        <div class="logo">
+          <img src="./asset/logo-ramsport.png" />
+        </div>
+        <nav class="nav-list">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#tentang">Tentang Kami</a></li>
+            <li><a href="#sewa">Sewa</a></li>
+            <li><a href="#produk">Produk</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="home-container">
+        <h1 class="judul">RAMSPORTS</h1>
+        <h2 class="penjelasan">
+          Toko olahraga dan jasa sewa lapangan badminton
+        </h2>
+      </div>
+    </header>
+    <main>
+      <div class="tentang-container" id="tentang">
+        <div class="content1-tentang-container">
+          <div class="foto-content">
+            <img src="./asset/tentang1-foto.png" />
+          </div>
+          <div class="artikel1-content">
+            <h2 class="headingartikel">Apa itu RAMSPORTS?</h2>
+            <hr class="line" />
+            <article class="penjelasan1">
+              Ramsports adalah toko olahraga yang berfokus pada badminton, menjual barang-barang badminton selain menjual barang juga menyediakan jasa sewa lapangan dan menyediakan pelatihan dengan pelatih berpengalaman badminton di beberapa cabang yaitu Cibitung, Cikarang dan Cikijing
+            </article>
+          </div>
+        </div>
+        <div class="content1-tentang-container">
+          <div class="artikel1-content">
+            <h2 class="headingartikel">Apa aja sih jasa kami?</h2>
+            <hr class="line" />
+            <article class="penjelasan1">
+              Ramsports menjual raket, kock, sepatu dan barang lainnya, lalu kami menyediakan service raket badminton ,menyediakan jasa sewa lapangan badminton di berbagai cabang kami dan pelatihan badminton yang dilatih oleh pelatih profesional
+            </article>
+          </div>
+            <div class="foto-content">
+              <img src="./asset/tentang2-foto.png" />
+            </div>
+        </div>
+      </div>
+      <div class="booking-container" id="sewa">
+        <h2>CABANG KAMI</h2>
+        <div class="lapangan-container">
+          <div class="lapangan">
+            <img class="foto-lapangan" src="./asset/lapangan1.png">
+            <h2> Ramsports Cibitung  
+              <div class="love-button" onclick="toggleLove(this)">
+                <i class="love-icon fa-solid fa-heart">
+               </i>
+              </div> 
+            </h2>
+            <!-- fa-solid untuk icon full -->
+            <p> 45K/Jam</p>
+            <a class="button-lokasi" href="https://maps.app.goo.gl/HwMefoEHqYW7VaJ87">Lokasi</a>
+          </div>
+          <div class="lapangan">
+            <img class="foto-lapangan" src="./asset/lapangan2.png">
+            <h2> Ramsports Cikarang
+              <div class="love-button" onclick="toggleLove(this)">
+                <i class="love-icon fa-solid fa-heart">
+               </i>
+              </div> 
+            </h2>
+            <p> 35K/Jam</p>
+            <a class="button-lokasi" href="https://maps.app.goo.gl/HwMefoEHqYW7VaJ87">Lokasi</a>
+          </div>
+          <div class="lapangan">
+            <img class="foto-lapangan" src="./asset/lapangan3.png">
+            <h2> Ramsports Cikijing 
+              <div class="love-button" onclick="toggleLove(this)">
+                <i class="love-icon fa-solid fa-heart">
+               </i>
+              </div> 
+            </h2>
+            <p> 40K/Jam</p>
+            <a class="button-lokasi" href="https://maps.app.goo.gl/HwMefoEHqYW7VaJ87">Lokasi</a>
+          </div>
+        </div>
+        <a class="button-booking" href="https://wa.me/628123456789?text=Halo,%20saya%20ingin%20menyewa%20Lapangan%20Anda." target="_blank">Sewa Lapangan</a>
+      </div>
+      <div class="produk-container" id="produk">
+    <h2>PRODUK TERSEDIA</h2>
+    <div class="slider-container">
+      <div class="katalog-produk" alt="img-1">
+        <div class="kotakbarang">
+          <img src="./asset/barang1.png" class="fotobarang">
+        </div>
+        <h2>Racket Yongex MB 1</h2>
+        <p>Rp. 700.000</p>
+      </div>
+      <div class="katalog-container" alt="img-2">
+        <div class="kotakbarang">
+          <img src="./asset/barang2.png" class="fotobarang">
+        </div>
+        <h2>Racket Yongex MB 2</h2>
+        <p>Rp. 750.000</p>
+      </div>
+      <div class="katalog-container" alt="img-3">
+        <div class="kotakbarang">
+          <img src="./asset/barang3.png" class="fotobarang">
+        </div>
+        <h2>Racket Yongex MB 3</h2>
+        <p>Rp. 800.000</p>
+      </div>
+      <div class="katalog-container">
+        <div class="kotakbarang">
+          <img src="./asset/barang4.png" class="fotobarang">
+        </div>
+        <h2>Racket Yongex MB 4</h2>
+        <p>Rp. 850.000</p>
+      </div>
+      <div class="katalog-container">
+        <div class="kotakbarang">
+          <img src="./asset/barang3.png" class="fotobarang">
+        </div>
+        <h2>Racket Yongex MB 11</h2>
+        <p>Rp. 700.000</p>
+      </div>
+      <div class="katalog-container">
+        <div class="kotakbarang">
+          <img src="./asset/barang4.png" class="fotobarang">
+        </div>
+        <h2>Racket Yongex MB 4</h2>
+        <p>Rp. 700.000</p>
+      </div>
+      <div class="katalog-container">
+        <div class="kotakbarang">
+          <img src="./asset/barang2.png" class="fotobarang">
+        </div>
+        <h2>Racket Yongex MB 11</h2>
+        <p>Rp. 700.000</p>
+      </div>
+    </div>
+    <!-- <div class="slider-container">
+    <div class="slider-wrapper">
+      <div class="image-list">
+        <button id="prev-slide" class="slide-button"><i class="icon-slide fa-solid fa-chevron-left"></i> </button>
+      <div class="katalog-produk" alt="img-1">
+        <div class="kotakbarang">
+          <img src="./asset/barang1.png" class="fotobarang">
+        </div>
+        <h2>Racket Yongex MB 1</h2>
+        <p>Rp. 700.000</p>
+      </div>
+      <div class="katalog-produk" alt="img-2">
+        <div class="kotakbarang">
+          <img src="./asset/barang2.png" class="fotobarang">
+        </div>
+        <h2>Racket Yongex MB 2</h2>
+        <p>Rp. 750.000</p>
+      </div>
+      <div class="katalog-produk" alt="img-3">
+        <div class="kotakbarang">
+          <img src="./asset/barang3.png" class="fotobarang">
+        </div>
+        <h2>Racket Yongex MB 3</h2>
+        <p>Rp. 800.000</p>
+      </div>
+      <div class="katalog-produk" alt="img-4">
+        <div class="kotakbarang">
+          <img src="./asset/barang4.png" class="fotobarang">
+        </div>
+        <h2>Racket Yongex MB 4</h2>
+        <p>Rp. 850.000</p>
+      </div>
+      <div class="katalog-produk" alt="img-5">
+        <div class="kotakbarang">
+          <img src="./asset/barang3.png" class="fotobarang">
+        </div>
+        <h2>Racket Yongex MB 11</h2>
+        <p>Rp. 700.000</p>
+      </div>
+      <div class="katalog-produk" alt="img-6">
+        <div class="kotakbarang">
+          <img src="./asset/barang4.png" class="fotobarang">
+        </div>
+        <h2>Racket Yongex MB 4</h2>
+        <p>Rp. 700.000</p>
+      </div>
+      <div class="katalog-produk" alt="img-7">
+        <div class="kotakbarang">
+          <img src="./asset/barang2.png" class="fotobarang">
+        </div>
+        <h2>Racket Yongex MB 11</h2>
+        <p>Rp. 700.000</p>
+      </div>
+      <button id="next-slide" class="slide-button"><i class="icon-slide fa-solid fa-chevron-right"></i> </button>
+      </div>
+
+    </div>
+    <div class="slider-scrollbar">
+      <div class="scrollbar-track">
+        <div class="scrollbar-thumb"></div>
+      </div>
+    </div>
+  </div> -->
+    <!-- <div class="slider-wrapper">
+      <div class="produk-list">
+        <div class="kotakbarang">
+          <img src="./asset/barang1.png" class="fotobarang">
+        </div>
+        <div class="kotakbarang">
+          <img src="./asset/barang2.png" class="fotobarang">
+        </div>
+        <div class="kotakbarang">
+          <img src="./asset/barang3.png" class="fotobarang">
+        </div>
+        <div class="kotakbarang">
+          <img src="./asset/barang4.png" class="fotobarang">
+        </div>
+        <div class="kotakbarang">
+          <img src="./asset/barang2.png" class="fotobarang">
+        </div>
+        <div class="kotakbarang">
+          <img src="./asset/barang3.png" class="fotobarang">
+        </div>
+      </div>
+    </div> -->
+    <button class="prev" onclick="changeSlide(-1)"><i class="icon-slide fa-solid fa-chevron-left"></i> </button>
+    <button class="next" onclick="changeSlide(1)"><i class="icon-slide fa-solid fa-chevron-right"></i> </button>
+    <h2 class="info">(Jika ingin membeli bisa langsung datang ke cabang kami)</h2>
+  </div>
+    </main>
+    <footer id="kontak">
+      <div class="footer-container">
+      <div class="sosmed">
+        <img src="./asset/logo-footer.png">
+        <div class="sosmed-contact">
+          <a href="https://wa.me/628123456789">
+            <div class="circle">
+              <i class="fa-brands fa-whatsapp"></i>
+            </div>
+          </a>
+          <a href="https://instagram.com">
+            <div class="circle">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </a>
+          <a href="https://tiktok.com">
+            <div class="circle">
+              <i class="fa-brands fa-tiktok"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="fitur">
+        <h3>Tentang Kami</h3>
+        <h3>Sewa</h3>
+        <h3>Produk</h3>
+        <h3>Kontak</h3>
+      </div>
+      </div>
+      <p>Copyright © 2023 <span>Ramsports</span>. All rights reserved.</p>
+    </footer>
+   
+  </body>
+
+ <script>
+   function toggleLove(button) {
+      button.classList.toggle('clicked');
+    }
+
+    let currentSlide = 0;
+    const sliderContainer = document.querySelector('.slider-container');
+
+    function changeSlide(n) {
+      currentSlide += n;
+
+      if (currentSlide >= sliderContainer.childElementCount) {
+        currentSlide = 0;
+      } else if (currentSlide < 0) {
+        currentSlide = sliderContainer.childElementCount - 1;
+      }
+      const translateValue = -currentSlide *10;
+        sliderContainer.style.transform = `translateX(${translateValue}%)`;
+    }
+
+    // const initSlider = () =>{
+    //   const imageList = document.querySelector(".slider-wrapper .image-list")
+    //   const slideButtons = document.querySelectorAll(".slider-wrapper .slide-button");
+    //   slidesButtons.forEach(button  =>{
+    //     button.addEventListener("click",()=>{
+    //       const direction = button.id === "prev-slide" ? -1 : 1;
+    //       const scrollAmount = imageList.clientWidth * direction;
+    //       imageList.scrollBy({ left: scrollAmount, behavior : "smooth"});
+    //     });
+    //   });
+    // }
+    // window.addEventListener("load", initSlider);
+
+  </script>
+
+
+</html>

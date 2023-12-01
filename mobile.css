@@ -1,0 +1,108 @@
+@media screen and (max-width: 480px) {
+    aside{
+        position: fixed;
+        top: 50%;
+        left:1vw;
+    }
+    aside p{
+        visibility: hidden;
+    }
+    .headingartikel{
+        font-size: 20px;
+    }
+    header .navbar-container{
+        flex-direction: column
+    }
+    header .navbar-container .nav-list ul {
+        padding-left: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+    header .nav-list{
+        padding: 0;
+    }
+    header .navbar-container .logo img {
+        margin:0;
+    }
+    header.header-content {
+        width: 100%;
+        height: 100%;
+        padding-bottom: 100px;
+    }
+    header .judul {
+        font-size: 40px;
+        margin:0px;
+        text-align: center;
+    }
+    header .penjelasan {
+        font-size: 20px;
+        width: auto;
+        margin:0px;
+        text-align: center;
+    }
+    header .home-container {
+        padding:30px 0px;
+    }
+
+    main .content1-tentang-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    main h2.headingartikel {
+        text-align: center;
+        font-size: 25px;
+    }
+    main article.penjelasan1 {
+        text-align: center;
+    }
+    main .foto-content img {
+        width: 200px;
+        height: auto;
+    }
+
+    main .lapangan-container {
+        flex-direction: column;
+    }
+
+    .lapangan{
+        text-align: center;
+        align-items: center;
+    }
+
+    .lapangan i{
+        margin-left: 10px;
+    }
+
+    img.foto-lapangan{
+        width: 300px;
+    }
+    .produk-container h2 {
+        font-size: 32px;
+    }
+    .produk-container h2.info {
+        font-size: 20px;
+    }
+    .slider-container {
+        padding: 50px;
+        overflow: scroll;
+    }
+
+    .katalog-container {
+        align-items: center;
+    }
+
+    .produk-container button{
+        visibility: hidden;
+    }
+    .footer-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .fitur{
+        gap: 1rem
+    }
+    footer p{
+        text-align: center;
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,462 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+}
+html body{
+  overflow-x: hidden;
+}
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+aside{
+  position: fixed;
+  display: flex;
+  color: #002142;
+  bottom: 50vh;
+  left:1vw;
+  z-index: 9999;
+  cursor: pointer;
+  flex-direction: row;
+}
+aside img{
+  width:50px;
+  height: 50px;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+aside:hover{
+  transform: translateY(-6px);
+  transition: transform 0.3s ease, width 0.3s ease;
+}
+header.header-content {
+  background-image: url(./asset/background-content-head.png);
+  width: 100%;
+  padding-bottom:30px ;
+}
+
+header .navbar-container {
+  width: 100%;
+  display: flex;
+  margin-inline: auto;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 1rem;
+  z-index: 999;
+  background-color: rgba(0, 33, 64, 0.5);
+}
+
+header .navbar-container .logo img {
+  width: 100px;
+  margin-left: 60px;
+}
+
+header .navbar-container .nav-list ul {
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem 5rem;
+}
+header .nav-list {
+  padding-right: 60px;
+}
+header .navbar-container .nav-list li {
+  list-style-type: none;
+}
+
+header .navbar-container .nav-list li a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: white;
+  border-radius: 999px;
+  transition: all 0.2s ease-in-out;
+}
+header .navbar-container .nav-list li a:hover {
+  color: turquoise;
+}
+header .content-container {
+  height: 100vh;
+}
+
+header .home-container {
+  z-index: 10;
+  color: white;
+  padding: 14% 0% 0% 5%;
+}
+header .judul {
+  font-size: 96px;
+  margin: -8px;
+  font-weight: bolder;
+}
+header .penjelasan {
+  font-size: 30px;
+  font-weight: lighter;
+  width: 650px;
+}
+
+main .tentang-container {
+  padding: 5% 15%;
+  display: flex;
+  flex-direction: column;
+}
+main .content1-tentang-container {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem 10rem;
+  margin: 30px 0px 30px 0px;
+}
+
+main .foto-content img{
+  width: 400px;
+  height: 500px;
+}
+main h2.headingartikel{
+  color:#002142;
+  font-size: 38px;
+  font-weight: 900;
+
+}
+main .line{
+  border: 1px solid #E4993F; 
+}
+
+main article.penjelasan1 {
+  font-size: 24px;
+  margin-top: 50px;
+  text-align: justify;
+}
+
+/* BOOKING CONTAINER */
+
+main .booking-container{
+  display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;  
+  padding: 5% 0;
+}
+
+main .booking-container h2{
+  text-align: center;
+  color:#002142;
+  font-size: 38px;
+  font-weight: bold;
+
+}
+
+main .lapangan-container{
+  display: flex;
+  flex-direction: row;
+  padding: 5%;
+  gap: 5rem;
+}
+
+main .lapangan{
+  display: flex;
+  flex-direction: column;
+}
+
+main .booking-container .lapangan h2{
+  text-align: left;
+  font-size: 24px;
+  margin:10px 0px 0px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+main .booking-container .lapangan p{
+  margin:5px 0px 15px 0px;
+  color: #002142;
+}
+
+main .button-lokasi {
+  border:none;
+  background-color: #002142;
+  width: 230px;
+  height: 50px;
+  color: white;
+  font-size: 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-decoration: none;
+}
+
+/* CSS LOVE */
+.love-button {
+  background-color: #ffffff;
+  /* border: 1px solid #ccc; */
+  display: inline-block;
+
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.love-button:hover {
+  /* background-color: #f0f0f0; */
+  transform: translateY(-3px);
+  transition: transform 0.3s ease, width 0.3s ease;
+  
+
+}
+
+.love-icon {
+  color: #777;
+  /* border: 1px solid #ccc; */
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+.love-button.clicked .love-icon {
+  color: #e74c3c; /* Warna baru ketika tombol ditekan */
+}
+/* ---- */
+
+.button-booking{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: #E4993F;
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+  width: 250px;
+  height: 70px;
+  border-radius:20px ;
+}
+
+
+/* Produk Container CSS */
+.produk-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;  
+  padding: 5% 0;
+}
+
+.produk-container h2{
+  text-align: center;
+  color:#002142;
+  font-size: 38px;
+  font-weight: bold;
+}
+
+.slider-container{
+  display: flex;
+width: 100%;
+  flex-direction: row;
+  /* white-space: nowrap;  */
+      transition: transform 0.3s ease;
+  gap: 1rem 3rem;
+}
+
+
+/* .slider-container{
+  max-width: 1200px;
+  width: 95%;
+} */
+
+/* .slider-wrapper .slide-button{
+  height: 50px;
+  width: 50px;
+  color: #F8F8F8;
+  background-color: #000000;
+  cursor: pointer;
+  border-radius: 50%;
+  border: none;
+  position: absolute;
+  top: 50%;
+}
+
+.slider-wrapper .slide-button#prev-slide{
+left:2px
+}
+
+.slider-wrapper .slide-button#next-slide{
+  right:2px
+}
+
+.slider-wrapper .image-list{
+  display: grid;
+  gap:18px;
+  overflow-x: auto ;
+  margin-bottom: 30px;
+  scrollbar-width: none;
+  grid-template-columns: repeat(10, 1fr);
+}
+
+.slider-wrapper .image-list::-webkit-scrollbar{
+  display: none;
+}
+
+.slider-wrapper .image-list .katalog-produk{
+object-fit: cover;
+width: 325px;
+} */
+
+/* .slider-container .slider-scrollbar{
+  height: 24px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.slider-scrollbar .scrollbar-track{
+  height: 2px;
+  width: 100%;
+  background-color: #F8F8F8;
+}
+
+.slider-scrollbar .scrollbar-thumb{
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: #000000;
+} */
+
+.katalog-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.kotakbarang{
+  width: 300px;
+  height: 350px;
+  background-color: #E9E9E9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fotobarang{
+  width: 200px;
+  transition: transform 0.3s ease, width 0.3s ease;
+}
+.fotobarang:hover{
+  transform: translateY(-50px);
+  width: 250px;
+}
+
+.slider-container h2{
+  font-size: 24px;
+  margin: 20px 0px;
+  text-align: start;
+}
+
+.produk-container button{
+  width: 70px;
+  height: 70px;
+  border: none;
+  background-color: #000000;
+  cursor: pointer;
+  position: absolute;
+}
+.prev{
+  left: 0px;
+}
+.next{
+  right: 0px;
+}
+
+.icon-slide{
+  color: #F8F8F8;
+  font-size:30px
+}
+h2.info{
+  font-size: 12px;
+  font-weight: 500;
+  padding: 30px;
+}
+/* ----- */
+
+
+/* FOOTER  */
+footer{
+  background-color: #0B2B4C;
+  height: 377px;
+}
+
+.footer-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5%;
+}
+
+.fitur {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+}
+.fitur h3{
+  font-size:18px;
+  color: white;
+  font-weight: 300;
+}
+
+
+footer p{
+  text-align: right;
+  margin-right: 5%;
+  color: white;
+}
+footer span{
+  color: #E4993F;
+}
+.sosmed-contact{
+display: flex;
+gap: 1rem;
+margin-top: 10px
+}
+
+.circle{
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  border: 1px solid white;
+ justify-content: center;
+ align-items: center;
+ display: flex;
+}
+.circle i{
+  font-size: 25px;
+  color: white;
+}
+.circle i:hover{
+  transform: translateY(-5px);
+  transition: transform 0.3s ease, width 0.3s ease;
+
+}
+
+
+/* Responsif untuk Tablet */
+
+
+/* Responsif untuk Mobile */
+/* @media only screen and (max-width: 480px) {
+  header .navbar-container {
+    padding: 1rem;
+  }
+  header .navbar-container .nav-list ul {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  header .navbar-container .nav-list.active ul {
+    display: flex;
+  }
+  header .navbar-container .nav-list li {
+    text-align: center;
+  }
+  header .navbar-container .nav-list li a {
+    font-size: 1.2rem;
+  }
+} */
